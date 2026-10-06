@@ -9,13 +9,11 @@ const DEFAULT_ELFLDR = "elfldr-ps5-1360.elf";
 
 // Wait this long before loading each autoload payload. Press R2 during the
 // countdown to cancel the rest of the list.
-const AUTOLOAD_DELAY_MS = 3000;
+const AUTOLOAD_DELAY_MS = 100;
 
 // Payloads loaded automatically, in order, once the kernel exploit is done.
 const AUTOLOAD_PAYLOADS = [
-  "ftpsrv-ps5.elf",
-  "ShadowMountPlus_1.7beta4.elf",
-  "kstuff-a53-fast-native.elf",
+  "ps5-unified-autoloader-v0.1.5-915a65e.elf",
 ];
 
 const SHELLCODE = {

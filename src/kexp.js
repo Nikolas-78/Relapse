@@ -9,7 +9,7 @@ const DEFAULT_ELFLDR = "elfldr-ps5-1360.elf";
 
 // Wait this long before loading each autoload payload. Press R2 during the
 // countdown to cancel the rest of the list.
-const AUTOLOAD_DELAY_MS = 100;
+const AUTOLOAD_DELAY_MS = 10;
 
 // Payloads loaded automatically, in order, once the kernel exploit is done.
 const AUTOLOAD_PAYLOADS = [
@@ -185,7 +185,7 @@ export async function loadOptionalPayloads(p, chain, log, control) {
   say("autoloading " + names.length + " payload(s), press R2 to cancel", "info");
 
   for (const name of names) {
-    say("loading " + name + " in " + AUTOLOAD_DELAY_MS / 1000 + "s", "info");
+    say("loading " + name + " in " + AUTOLOAD_DELAY_MS / 10 + "s", "info");
     if (!(await delay(cancelled, AUTOLOAD_DELAY_MS))) {
       say("autoload cancelled, remaining payload(s) will not be loaded", "info");
       return;

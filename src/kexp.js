@@ -9,7 +9,7 @@ const DEFAULT_ELFLDR = "elfldr-ps5-1360.elf";
 
 // Wait this long before loading each autoload payload. Press R2 during the
 // countdown to cancel the rest of the list.
-const AUTOLOAD_DELAY_MS = 10;
+const AUTOLOAD_DELAY_MS = 0;
 
 // Payloads loaded automatically, in order, once the kernel exploit is done.
 const AUTOLOAD_PAYLOADS = [

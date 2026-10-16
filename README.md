@@ -5,7 +5,7 @@ Supported firmware: 7.00 through 13.60.
 - In the network settings, set Primary DNS to `45.56.67.85` (Recommended)
 - Run `python serve.py` locally, or open https://nikolas-78.github.io/Relapse/ on the PS5.
 - The default payloads are stored in `payloads/` after a successful run, the ELF loader listens on port `9021`.
-- Once the kernel exploit finishes and elfldr is listening, the payload list starts loading on its own, 3 seconds before each payload.
+- Once the kernel exploit finishes and elfldr is listening, the payload list starts loading on its own.
 - Press R2 during any of the countdowns to cancel. The remaining payloads are not loaded and the page has to be reloaded to try again.
 
 ## Payloads

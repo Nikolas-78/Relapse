@@ -13,7 +13,9 @@ const AUTOLOAD_DELAY_MS = 0;
 
 // Payloads loaded automatically, in order, once the kernel exploit is done.
 const AUTOLOAD_PAYLOADS = [
-  "ps5-unified-autoloader-v0.1.5-915a65e.elf",
+  "ftpsrv.elf",
+  "shadowmountplus.elf",
+  "kstuff-fpkg-1.13-dr-test6.elf",
 ];
 
 const SHELLCODE = {
